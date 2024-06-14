@@ -1,1 +1,4 @@
-# TP-2-Arquitectura_y_Dise-o_de_Interfaces
+TP N° 2 de Arquitectura y Diseño de interfaces
+Integrantes: Ignacio Romero y Ignacio Ruiz 
+Curso: 3° 1ra 
+Carrera: Desarrollo de Software GC
