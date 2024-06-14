@@ -1,0 +1,9 @@
+.animation {
+    animation: example 5s infinite;
+  }
+
+  @keyframes example {
+    0% { background-color: red; }
+    50% { background-color: yellow; }
+    100% { background-color: blue; }
+  }

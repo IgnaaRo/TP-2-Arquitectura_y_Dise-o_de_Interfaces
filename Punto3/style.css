@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(./img/fondo-abstracto-diseno-imagenes.png);
+    background-size: 100%;
+  }
+  h1 {
+    color: white;
+  }
+  a, button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    text-decoration: none;
+    color:black;
+    background-color: #c71700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, opacity 0.3s;
+  }
+  a:hover, button:hover {
+    background-color: #ff0000;
+  }
+  a:disabled, button:disabled {
+    background-color: #aaa;
+    pointer-events: none;
+  }
+  audio, video {
+    margin: 10px 0;
+    max-width: 100%;
+  }
+  #toast {
+    visibility: hidden;
+    min-width: 250px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+    transform: translateX(-50%);
+  }
+  #toast.show {
+    visibility: visible;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+  .icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    vertical-align: middle;
+    margin-right: 8px;
+  }
+  .offline-icon {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyBmaWxsPSJyZWQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTIsMGMtNi42MjQsMC0xMiA1LjM3Ni0xMiAxMnM1LjM3NiwxMiAxMiwxMnM3LjgtNS4zNzYsNy44LTEyUzE4LjYyNCwwLDEyLDB6IE0xMiwxOGMtMi42NTYsMC01LTIuMTQ0LTUtNXMyLjM0NC01LDUtNXM1LDIuMzQ0LDUsNVMxNC42NTYsMTgsMTIsMTh6Ii8+PC9zdmc+');
+  }
+  .online-icon {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyBmaWxsPSJncmVlbiIgdmlld0JveD0iMCAwIDI0IDI0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xMiwwQzUuMzc2LDAsMCw1LjM3NiwwLDEyczUuMzc2LDEyLDEyLDEyczcuOC01LjM3Niw3LjgtMTJTMTguNjI0LDAsMTIsMHogTTEyLDE4Yy0yLjY1NiwwLTUtMi4xNDQtNS01czIuMzQ0LTUsNS01czUsMi4zNDQsNSw1UzE0LjY1NiwxOCwxMiwxOHoiLz48L3N2Zz4=');
+  }
